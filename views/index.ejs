@@ -1,0 +1,12 @@
+<h1> Welcome to <u>HostYoPages !</u> </h1>
+<% if(userName) {%>    
+<h4> Hello <%= userName %> </h4>
+<form method="POST" action="/logout">
+	<a href="/home">Home</a>
+	<button>Logout</button>
+</form>
+<%} else {%>
+<h4> Hello Guest </h4>
+<a href="/login">Login</a>
+<a href="/register">Register</a>
+<%}%>
