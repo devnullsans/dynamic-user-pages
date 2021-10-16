@@ -1,4 +1,19 @@
 <h1><a href="/">HostYoPages !</a></h1>
 <form method="POST" action="/logout"><button>Logout</button></form>
 <h4><a href="/route">New Page</a></h4>
+<span>Name: <%= userName%></span>
+<ul>
+	<% for (let i = userPages.length - 1; i >= 0 ; i--) { %>
+	<li>
+			<div>
+					<a href="/<%= userPages[i].id %>" style="text-align:left">
+						<%= userPages[i].business %>
+					</a>
+					<span style="font-weight:700;font-size:25px;line-height:20px;text-align:left;">
+						<%= userPages[i].business %>
+					</span>
+			</div>
+	</li>
+	<% } %>
+</ul>
 <!-- Your Pages -->
