@@ -6,12 +6,9 @@
 	<% for (let i = userPages.length - 1; i >= 0 ; i--) { %>
 	<li>
 			<div>
-					<a href="/<%= userPages[i].id %>" style="text-align:left">
-						<%= userPages[i].business %>
-					</a>
-					<span style="font-weight:700;font-size:25px;line-height:20px;text-align:left;">
-						<%= userPages[i].business %>
-					</span>
+					<h3><%= userPages[i].business %></h3>
+					<a href="/<%= userPages[i].id %>">View</a>
+					<a href="/route/<%= userPages[i].id %>">Edit</a>
 			</div>
 	</li>
 	<% } %>

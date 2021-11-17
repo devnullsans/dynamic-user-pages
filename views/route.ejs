@@ -1,7 +1,7 @@
 <h1>
 	Tell us about your Business
 </h1>
-<form name="form1" method="POST" action="/route">
+<form name="form1" method="POST" action="/route/<%= pageID %>">
 	<table>
 		<tr>
 			<td>What's the name of your Business?</td>
@@ -17,5 +17,5 @@
 	</table>
 </form>
 <% if(pageID!=null){ %>
-	<div> Page Link: <a href="/<%= pageID %>"><%= pageID %></a></div>
+	<div> Page Link: <a href="/<%= pageID %>">View</a></div>
 <%}%>
